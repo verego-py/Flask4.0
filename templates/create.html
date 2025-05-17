@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Добавление записи
+{% endblock %}
+
+{% block content %}
+<h1>Добавление записи</h1>
+
+<form method="POST" class="form-control" enctype="multipart/form-data">
+  <input type="file" class="form-control" id="photo" name="file">
+  <input type="text" name="name" placeholder="Введите имя собаки" class="form-control"/><br>
+  <input type="text" name="breed" placeholder="Введите породу собаки" class="form-control"/><br>
+  <textarea type="text" name="text" placeholder="Введите информацию" class="form-control"/></textarea><br>
+  <button  class="btn btn-success" type="submit">Добавить</button>
+</form>
+{% endblock %}
